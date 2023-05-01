@@ -1,5 +1,10 @@
+import { Intro } from "./components/intro";
+import { LandingPageContainer } from "./style";
+
 export function LandingPage() {
     return (
-        <h1>oiiii</h1>
+        <LandingPageContainer>
+            <Intro />
+        </LandingPageContainer>
     )
 }

@@ -12,10 +12,12 @@ export function Header() {
 
     const NavDesktopLinks = [
         { title: 'Home', path: '/' },
+        { title: 'Sobre', path: '/sobre' },
     ]
 
     const NavMobileLinks = [
         { title: 'Home', path: '/' },
+        { title: 'Sobre', path: '/sobre' },
         { title: 'Login', path: '/login' },
     ]
 
