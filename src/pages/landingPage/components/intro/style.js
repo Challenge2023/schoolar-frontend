@@ -7,10 +7,12 @@ export const IntroContainer = styled.section`
   grid-template-columns: 1fr 1fr;
   width: 100%; 
   align-items: center;
+  height: 85vh;
 
   @media (max-width: 768px) {
     padding: 30px 30px 80px;
     display: flex;
+    height: 70vh;
   }
 `
 

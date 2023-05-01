@@ -7,6 +7,7 @@ export const ContentSectionContainer = styled.section`
     flex-direction: column;
     align-items: center;
     padding: 4rem 3rem 0 3rem;
+    margin-bottom: 2.5%;
 `
 
 export const TextsContainer = styled.div`

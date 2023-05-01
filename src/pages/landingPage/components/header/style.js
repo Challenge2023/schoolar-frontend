@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
 
 export const LogoContainer = styled.div`
   img {
-    width: 70%;
+    width: 90%;
   }
 `
 
@@ -25,6 +25,10 @@ export const Container = styled.nav`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    @media(max-width: 768px) {
+      align-items: flex-start;
+    }
 `
 
 export const NavDesktopContainer = styled.ul`

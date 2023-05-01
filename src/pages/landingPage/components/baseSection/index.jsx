@@ -9,7 +9,7 @@ export function BaseSection({ title, desc, image, animation }) {
                 <TitleText color="brand-blue" weight="700" fontSize="title-l">
                     {title}
                 </TitleText>
-                <RegularText color="base-text-darker" weight="400" fontSize="text-s">
+                <RegularText color="base-text-darker" weight="400" fontSize="text-m">
                     {desc}
                 </RegularText>
             </TextContainer>

@@ -5,7 +5,7 @@ import { BrandsContainer } from './style'
 
 export function Brands() {
     return (
-        <BrandsContainer data-aos="fade-right">
+        <BrandsContainer data-aos="fade-left">
             <img src={LogoFiap} alt="LogoFiap" />
             <img src={LogoPlusoft} alt="LogoPlusoft" />
             <img src={LogoTopa} alt="LogoTopa" />
