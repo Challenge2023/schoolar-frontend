@@ -5,6 +5,7 @@ import Analytics from "../../assets/analytics.png"
 import Upload from "../../assets/upload-test.png"
 import Content from "../../assets/content-helper.png"
 import { BaseSection } from "./components/baseSection";
+import { ContentSection } from "./components/contentSection";
 
 export function LandingPage() {
 
@@ -52,6 +53,16 @@ export function LandingPage() {
                     if (item.equals) {
                         return (
                             <BaseSection
+                                key={index}
+                                title={item.title}
+                                desc={item.desc}
+                                image={item.image}
+                                animation={item.animation}
+                            />
+                        )
+                    } else {
+                        return (
+                            <ContentSection
                                 key={index}
                                 title={item.title}
                                 desc={item.desc}

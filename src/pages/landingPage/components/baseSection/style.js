@@ -4,11 +4,13 @@ export const BaseSectionContainer = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%; 
+    padding: 0 8rem;
 
     @media(max-width: 768px) {
         display: flex;
         flex-direction: column;
         gap: 4rem;
+        padding: 0 3rem;
         align-items: center;
     }
 `
