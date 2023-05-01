@@ -6,6 +6,7 @@ export const IntroContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%; 
+  align-items: center;
 
   @media (max-width: 768px) {
     padding: 30px 30px 80px;
@@ -25,6 +26,7 @@ export const ImageContainer = styled.div`
 
   img {
     width: 80%;
+    height: 80%;
   }
 
   @media (max-width: 768px) {
