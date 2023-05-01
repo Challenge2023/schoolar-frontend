@@ -14,11 +14,7 @@ export const TextsContainer = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 0.2rem;
-
-    @media(max-width: 768px) {
-        gap: 0.5rem;
-    }
+    gap: 0.5rem;
 `
 
 export const ImageContainer = styled.div`

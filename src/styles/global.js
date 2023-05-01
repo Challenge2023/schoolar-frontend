@@ -36,6 +36,19 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #0A3180;
+    border-radius: 5px;
+  }
+
   @media (max-width: 1366px) {
     html {
       font-size: 14px;

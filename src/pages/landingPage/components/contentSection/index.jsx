@@ -9,7 +9,7 @@ export function ContentSection({ title, desc, image, animation }) {
                 <TitleText color="base-white" weight="700" fontSize="title-l">
                     {title}
                 </TitleText>
-                <RegularText color="base-background" weight="300" fontSize="text-s">
+                <RegularText color="base-background" weight="500" fontSize="text-m">
                     {desc}
                 </RegularText>
             </TextsContainer>
