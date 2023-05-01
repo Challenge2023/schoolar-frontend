@@ -29,7 +29,7 @@ export const ImageContainer = styled.div`
 
     @media(max-width: 768px) {
         img {
-            max-width: 20rem;
+            max-width: 30rem;
             transform: translateY(20%);
         }
     }
