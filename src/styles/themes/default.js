@@ -17,7 +17,7 @@ export const defaultTheme = {
         'title-s': '1.2rem',
 
         'text-m': '1rem',
-        'text-s': '0.9rem',
+        'text-s': '0.82rem',
     },
     fonts: {
         regular: "'Poppins'",

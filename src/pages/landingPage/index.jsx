@@ -1,7 +1,7 @@
 import { Intro } from "./components/intro";
 import { BaseSectionContainer, LandingPageContainer } from "./style";
 import { Brands } from "./components/brands"
-import Analytics from "../../assets/analytics.png"
+import Analytics from "../../assets/upload-test.png"
 import Upload from "../../assets/upload-test.png"
 import Content from "../../assets/content-helper.png"
 import { BaseSection } from "./components/baseSection";

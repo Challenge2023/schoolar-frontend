@@ -17,4 +17,8 @@ export const RegularText = styled.p`
   font-size: ${({ theme, fontSize }) => theme.textSizes[`${fontSize}`]};
   line-height: 160%;
   font-weight: ${({ weight }) => weight ?? 400};
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.textSizes["text-s"]};
+  }
 `

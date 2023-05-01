@@ -6,8 +6,7 @@ export const ContentSectionContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
-    padding: 3rem;
+    padding: 4rem 3rem 0 3rem;
 `
 
 export const TextsContainer = styled.div`
@@ -19,14 +18,18 @@ export const TextsContainer = styled.div`
 
 export const ImageContainer = styled.div`
     display: flex;
-
+    justify-content: center;
+    
     img {
-        max-width: 58rem;
+        max-width: 60rem;
+        padding-left: 4%;
+        transform: translateY(10%);
     }
 
     @media(max-width: 768px) {
         img {
             max-width: 20rem;
+            transform: translateY(20%);
         }
     }
 `

@@ -19,6 +19,10 @@ export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2.2rem;
+
+    @media(max-width: 768px) {
+        text-align: justify;
+    }
 `
 
 export const ImageContainer = styled.div`
