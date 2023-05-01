@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Button = styled(Link)`
-  background-color: ${({ theme, backgroundColor }) =>
-    theme.colors[`${backgroundColor}`]};
+  background-color: ${({ theme, backgroundcolor }) =>
+    theme.colors[`${backgroundcolor}`]};
   border: 2px solid;
-  border-color: ${({ theme, textColor }) => theme.colors[`${textColor}`]};
+  border-color: ${({ theme, textcolor }) => theme.colors[`${textcolor}`]};
   padding: 0.832rem 2rem;
   border-radius: 10px;
-  color: ${({ theme, textColor }) => theme.colors[`${textColor}`]};
+  color: ${({ theme, textcolor }) => theme.colors[`${textcolor}`]};
   transition: 0.3s;
   width: ${({ width }) => width};
   text-align: center;
@@ -20,9 +20,9 @@ export const Button = styled(Link)`
   gap: 0.5rem;
   cursor: pointer;
   &:hover {
-    background-color: ${({ theme, hoverBackgroundColor }) =>
-    theme.colors[`${hoverBackgroundColor}`]};
-    color: ${({ theme, hoverColor }) =>
-    theme.colors[`${hoverColor}`]};
+    background-color: ${({ theme, hoverbackgroundcolor }) =>
+    theme.colors[`${hoverbackgroundcolor}`]};
+    color: ${({ theme, hovercolor }) =>
+    theme.colors[`${hovercolor}`]};
   }
 `

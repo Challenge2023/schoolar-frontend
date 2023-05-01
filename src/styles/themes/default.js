@@ -7,7 +7,8 @@ export const defaultTheme = {
         'brand-green': '#55AC68',
         'base-text': '#DBDBDB',
         'base-title': '#202020',
-        'base-background': '#FCFCFC'
+        'base-background': '#FCFCFC',
+        'base-text-darker': '#868686'
     },
     textSizes: {
         'title-l': '2.6rem',

@@ -43,11 +43,11 @@ export function Header() {
                 <ButtonContainer>
                     <ButtonLink
                         path="/login"
-                        backgroundColor="brand-blue"
-                        hoverBackgroundColor="base-white"
-                        textColor="base-white"
+                        backgroundcolor="brand-blue"
+                        hoverbackgroundcolor="base-white"
+                        textcolor="base-white"
                         width="130px"
-                        hoverColor="brand-blue"
+                        hovercolor="brand-blue"
                     >
                         Login
                     </ButtonLink>

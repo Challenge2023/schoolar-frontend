@@ -18,10 +18,10 @@ export function Intro() {
                         path="/login"
                         weight="600"
                         width="150px"
-                        backgroundColor="base-white"
-                        hoverColor="brand-blue"
-                        hoverBackgroundColor="base-white"
-                        textColor="brand-blue"
+                        backgroundcolor="base-white"
+                        hovercolor="brand-blue"
+                        hoverbackgroundcolor="base-white"
+                        textcolor="brand-blue"
                     >
                         Saiba Mais
                     </ButtonLink>
