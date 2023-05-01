@@ -1,16 +1,15 @@
 import styled from 'styled-components'
 
 export const IntroContainer = styled.section`
-  padding: 40px 100px;
+  padding: 50px 100px 110px;
   background-color: ${({ theme }) => theme.colors['brand-blue']};
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%; 
 
   @media (max-width: 768px) {
-    padding: 30px;
+    padding: 30px 30px 80px;
     display: flex;
-    text-align: center;
   }
 `
 
@@ -31,4 +30,8 @@ export const ImageContainer = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
+`
+
+export const ButtonContainer = styled.div`
+  padding-top: 20px;
 `

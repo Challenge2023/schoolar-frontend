@@ -46,6 +46,8 @@ export function Header() {
                         backgroundColor="brand-blue"
                         hoverBackgroundColor="base-white"
                         textColor="base-white"
+                        width="130px"
+                        hoverColor="brand-blue"
                     >
                         Login
                     </ButtonLink>

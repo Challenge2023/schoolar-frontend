@@ -7,14 +7,13 @@ export const Button = styled(Link)`
     theme.colors[`${backgroundColor}`]};
   border: 2px solid;
   border-color: ${({ theme, textColor }) => theme.colors[`${textColor}`]};
-  padding: 0.737rem 2rem;
+  padding: 0.832rem 2rem;
   border-radius: 10px;
   color: ${({ theme, textColor }) => theme.colors[`${textColor}`]};
   transition: 0.3s;
-  max-width: 170px;
-  min-width: 120px;
+  width: ${({ width }) => width};
   text-align: center;
-  font-weight: 500;
+  font-weight: ${({ weight }) => weight};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +22,7 @@ export const Button = styled(Link)`
   &:hover {
     background-color: ${({ theme, hoverBackgroundColor }) =>
     theme.colors[`${hoverBackgroundColor}`]};
-    color: ${({ theme, backgroundColor }) =>
-    theme.colors[`${backgroundColor}`]};
+    color: ${({ theme, hoverColor }) =>
+    theme.colors[`${hoverColor}`]};
   }
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-    padding: 40px 100px;
+    padding: 55px 100px;
     width: 100%;
     background-color: ${({ theme }) => theme.colors['brand-blue']};
 
