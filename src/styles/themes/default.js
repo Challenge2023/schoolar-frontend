@@ -15,7 +15,7 @@ export const defaultTheme = {
         'title-ms': '1.6rem',
         'title-s': '1.2rem',
 
-        'text-m': '1rem',
+        'text-m': '1.1rem',
         'text-s': '0.9rem',
     },
     fonts: {
