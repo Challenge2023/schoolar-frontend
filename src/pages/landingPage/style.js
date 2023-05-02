@@ -11,6 +11,7 @@ export const BaseSectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 18.5rem 0px;
+  padding-bottom: 10rem;
 
   @media(max-width: 768px) {
     gap: 12rem 0px;
