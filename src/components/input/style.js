@@ -18,6 +18,10 @@ export const Input = styled.input`
   &:disabled {
     cursor: not-allowed;
   }
+
+  @media(max-width: 768px) {
+    padding: 1rem;
+  }
 `
 
 export const ErrorMessage = styled.span`
