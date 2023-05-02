@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.white};
+    background: #FCFCFC;
     color: ${(props) => props.theme.black};
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;

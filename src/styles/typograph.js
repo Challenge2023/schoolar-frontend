@@ -12,6 +12,17 @@ export const TitleText = styled.h1`
   }
 `
 
+export const TitleTextRegular = styled.h1`
+  color: ${({ theme, color }) => theme.colors[`${color}`]};
+  font-size: ${({ theme, fontSize }) => theme.textSizes[`${fontSize}`]};
+  line-height: 150%;
+  font-weight: ${({ weight }) => weight ?? 800};
+
+  @media (max-width: 768px) {
+    font-size: ${({ theme }) => theme.textSizes["title-m"]};
+  }
+`
+
 export const RegularText = styled.p`
   color: ${({ theme, color }) => theme.colors[`${color}`]};
   font-size: ${({ theme, fontSize }) => theme.textSizes[`${fontSize}`]};

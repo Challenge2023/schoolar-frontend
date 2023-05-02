@@ -10,7 +10,10 @@ export const defaultTheme = {
         'base-background': '#FCFCFC',
         'base-text-darker': '#868686',
         'secondary-background': '#ECEEEF',
-        'base-text-lighter': '#A1A1A1'
+        'base-text-lighter': '#A1A1A1',
+        'background-login': '#E2E5EC',
+        'base-error': '#f84747',
+        'base-button-hover': '#1950C2',
     },
     textSizes: {
         'title-l': '2.6rem',
