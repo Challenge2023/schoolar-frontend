@@ -8,7 +8,9 @@ export const defaultTheme = {
         'base-text': '#DBDBDB',
         'base-title': '#202020',
         'base-background': '#FCFCFC',
-        'base-text-darker': '#868686'
+        'base-text-darker': '#868686',
+        'secondary-background': '#ECEEEF',
+        'base-text-lighter': '#A1A1A1'
     },
     textSizes: {
         'title-l': '2.6rem',
@@ -17,6 +19,7 @@ export const defaultTheme = {
         'title-s': '1.2rem',
 
         'text-m': '1rem',
+        'text-ms': '.9rem',
         'text-s': '0.82rem',
     },
     fonts: {
