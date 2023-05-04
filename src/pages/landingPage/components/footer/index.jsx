@@ -32,7 +32,7 @@ export function Footer() {
                     backgroundcolor="secondary-background"
                     hoverbackgroundcolor="brand-blue"
                     textcolor="brand-blue"
-                    width="160px"
+                    width="180px"
                     hovercolor="base-background"
                 >
                     Contate-nos

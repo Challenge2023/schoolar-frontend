@@ -17,7 +17,7 @@ export function Intro() {
                     <ButtonLink
                         path="/login"
                         weight="600"
-                        width="150px"
+                        width="160px"
                         backgroundcolor="base-white"
                         hovercolor="brand-blue"
                         hoverbackgroundcolor="base-white"

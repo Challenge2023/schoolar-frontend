@@ -11,7 +11,7 @@ export const ContactContainer = styled.div`
     align-items: center;
 
     img {
-        width: 10%;
+        width: 12.5%;
     }
 
     @media(max-width: 768px) {
