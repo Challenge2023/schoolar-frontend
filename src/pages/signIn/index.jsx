@@ -5,6 +5,9 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { SignInValidatorSchema } from '../../utils/schema/loginSchema'
 import { ButtonForm } from '../../components/ButtonForm'
+import SchoolarBrand from '../../assets/schoolar-brand.svg'
+import { BackButton } from '../../components/backButton'
+import ArrowBack from '../../assets/arrow-back.svg'
 
 const formData = [
     {
@@ -38,7 +41,19 @@ export function Login() {
     return (
         <LoginContainer>
             <ImageContainer>
+                    <BackButton
+                        path="/"
+                        weight="500"
+                        width="60px"
+                        backgroundcolor="brand-blue"
+                        hovercolor="base-background"
+                        hoverbackgroundcolor="base-button-hover"
+                        textcolor="base-white"
+                    >
+                        {ArrowBack}
+                    </BackButton>
 
+                <img src={SchoolarBrand} alt="schoolar-brand" />
             </ImageContainer>
 
             <FormContainer>

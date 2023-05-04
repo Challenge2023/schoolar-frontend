@@ -2,28 +2,43 @@ import styled from 'styled-components'
 
 export const LoginContainer = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100vh;
 `
 
 export const ImageContainer = styled.div`
     width: 100%;
-    margin: 1.5rem;
-    border-radius: 10px;
-    background-color: ${({ theme }) => theme.colors['background-login']};   
+    border-bottom: 1px solid #D6D6D6;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+
+    /* img {
+      max-width: 10rem;
+    } */
 
     @media(max-width: 768px) {
-        display: none;
+    padding: 1rem 2rem;
+
+      img {
+        max-width: 7rem;
+      }
     }
 `
 
 export const FormContainer = styled.div`
     width: 100%;
-    padding: 0rem 4rem;
+    padding: 0rem 25%;
+    margin: auto;
     display: flex;
     justify-content: center;
-    gap: 3.75rem;
+    gap: 3rem;
     flex-direction: column;
-    background-color: ${({ theme }) => theme.colors['base-background']};   
+    background-color: ${({ theme }) => theme.colors['base-background']};  
+
+    @media(max-width: 768px) {
+      padding: 0 5%;
+    }
 `
 
 export const TextsContainer = styled.div`
