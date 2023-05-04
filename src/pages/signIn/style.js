@@ -13,10 +13,6 @@ export const ImageContainer = styled.div`
     justify-content: space-between;
     padding: 2rem 3rem;
 
-    /* img {
-      max-width: 10rem;
-    } */
-
     @media(max-width: 768px) {
     padding: 1rem 2rem;
 
@@ -28,7 +24,7 @@ export const ImageContainer = styled.div`
 
 export const FormContainer = styled.div`
     width: 100%;
-    padding: 0rem 25%;
+    padding: 0rem 30%;
     margin: auto;
     display: flex;
     justify-content: center;
