@@ -53,7 +53,7 @@ export function SideBar() {
                 {isOpen && (
                     <NavMobileContainer>
                         {NavMobileLinks.map(({ title, path }) => (
-                            <NavMobileItem key={path} title={title} path={path} />
+                            <NavMobileItem key={path} title={title} path={path} textcolor="base-text-darker" />
                         ))}
                     </NavMobileContainer>
                 )}

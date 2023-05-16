@@ -31,7 +31,7 @@ export function Header() {
                 <NavContainer>
                     <NavDesktopContainer>
                         {NavDesktopLinks.map(({ title, path }) => (
-                            <NavDesktopItem key={path} title={title} path={path} />
+                            <NavDesktopItem key={path} title={title} path={path} textcolor="base-white" />
                         ))}
                     </NavDesktopContainer>
                 </NavContainer>

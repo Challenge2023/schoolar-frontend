@@ -55,6 +55,10 @@ export const MobileIcon = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
+
+    .hamburger-react{
+      color: ${({ theme }) => theme.colors['base-text-darker']};
+    }
   }
 `
 
