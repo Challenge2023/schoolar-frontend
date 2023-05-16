@@ -52,7 +52,7 @@ export function Footer() {
             </FooterLinksContainer>
 
             <PoweredContainer>
-                <RegularText color="base-text-lighter" weight="500" fontSize="text-ms">
+                <RegularText color="base-text-darker" weight="500" fontSize="text-ms">
                     powered by TOPA
                 </RegularText>
             </PoweredContainer>

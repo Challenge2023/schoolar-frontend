@@ -8,6 +8,8 @@ import { ButtonForm } from '../../components/ButtonForm'
 import SchoolarBrand from '../../assets/schoolar-brand.svg'
 import { BackButton } from '../../components/backButton'
 import ArrowBack from '../../assets/arrow-back.svg'
+import { Navigate } from 'react-router-dom'
+import { useState } from "react";
 
 const formData = [
     {
@@ -33,14 +35,22 @@ export function Login() {
         resolver: yupResolver(SignInValidatorSchema),
     })
 
+    //LÓGICA APENAS PARA TESTE
+    const [user, setUser] = useState(null)
+    const [signed, setSigned] = useState(false)
+
     async function handleLogin(inputData) {
-        //logica login aqui
         console.log(inputData)
+        setSigned(true)
+        setUser(inputData)
     }
 
-    return (
-        <LoginContainer>
-            <ImageContainer>
+    if (signed) {
+        return <Navigate to="/home" />
+    } else {
+        return (
+            <LoginContainer>
+                <ImageContainer>
                     <BackButton
                         path="/"
                         weight="500"
@@ -53,46 +63,48 @@ export function Login() {
                         {ArrowBack}
                     </BackButton>
 
-                <img src={SchoolarBrand} alt="schoolar-brand" />
-            </ImageContainer>
+                    <img src={SchoolarBrand} alt="schoolar-brand" />
+                </ImageContainer>
 
-            <FormContainer>
-                <TextsContainer>
-                    <TitleTextRegular color="base-title" weight="500" fontSize="title-l">
-                        Login
-                    </TitleTextRegular>
-                    <RegularText color="base-text-lighter" weight="400" fontSize="text-ms">
-                        Olá, bem vindo de volta
-                    </RegularText>
-                </TextsContainer>
+                <FormContainer>
+                    <TextsContainer>
+                        <TitleTextRegular color="base-title" weight="500" fontSize="title-l">
+                            Login
+                        </TitleTextRegular>
+                        <RegularText color="base-text-lighter" weight="400" fontSize="text-ms">
+                            Olá, bem vindo de volta
+                        </RegularText>
+                    </TextsContainer>
 
-                <FormDataContainer onSubmit={handleSubmit(handleLogin)} noValidate>
-                    <InputContainer>
-                        {formData.map((item, index) => {
-                            return (
-                                <InputForm
-                                    key={index}
-                                    error={errors[item.name]}
-                                    labelText={item.labelText}
-                                    placeholder={item.placeholder}
-                                    typeInput={item.inputType}
-                                    {...register(item.name)}
-                                />
-                            )
-                        })}
-                    </InputContainer>
-                    <ButtonForm
-                        type="submit"
-                        backgroundColor="brand-blue"
-                        textColor="base-white"
-                        hoverBackgroundColor="base-button-hover"
-                    >
-                        Login
-                    </ButtonForm>
-                </FormDataContainer>
+                    <FormDataContainer onSubmit={handleSubmit(handleLogin)} noValidate>
+                        <InputContainer>
+                            {formData.map((item, index) => {
+                                return (
+                                    <InputForm
+                                        key={index}
+                                        error={errors[item.name]}
+                                        labelText={item.labelText}
+                                        placeholder={item.placeholder}
+                                        typeInput={item.inputType}
+                                        {...register(item.name)}
+                                    />
+                                )
+                            })}
+                        </InputContainer>
+                        <ButtonForm
+                            type="submit"
+                            backgroundColor="brand-blue"
+                            textColor="base-white"
+                            hoverBackgroundColor="base-button-hover"
+                        >
+                            Login
+                        </ButtonForm>
+                    </FormDataContainer>
 
-            </FormContainer>
-        </LoginContainer>
-    )
+                </FormContainer>
+            </LoginContainer>
+        )
+    }
+
 
 }

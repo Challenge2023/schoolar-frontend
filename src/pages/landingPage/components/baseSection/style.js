@@ -4,7 +4,11 @@ export const BaseSectionContainer = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%; 
-    padding: 0 8rem;
+    padding: 0 10rem;
+
+    @media (max-width: 1366px) {
+        padding: 0 8rem;
+    }
 
     @media(max-width: 768px) {
         display: flex;

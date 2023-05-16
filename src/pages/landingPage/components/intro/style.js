@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 
 export const IntroContainer = styled.section`
-  padding: 50px 100px 110px;
+  padding: 50px 15rem 110px;
   background-color: ${({ theme }) => theme.colors['brand-blue']};
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%; 
   align-items: center;
   height: 85vh;
+
+  @media(max-width: 1366px) {
+    padding: 50px 100px 110px;
+  }
 
   @media (max-width: 768px) {
     padding: 30px 30px 80px;

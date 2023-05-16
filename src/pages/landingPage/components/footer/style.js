@@ -2,7 +2,11 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
     background-color: ${({ theme }) => theme.colors['secondary-background']};
-    padding: 4rem 8rem 0 8rem;
+    padding: 6rem 15rem 0;
+
+    @media(max-width: 768px) {
+        padding: 4rem 8rem 0;
+    }
 `
 
 export const ContactContainer = styled.div`
@@ -40,9 +44,9 @@ export const FooterLinksContainer = styled.ul`
 export const PoweredContainer = styled.div`
     display: flex;
     justify-content: center;
-    padding-top: 8rem;
+    padding: 8rem 0 1rem;
 
     @media(max-width: 768px) {
-        padding-top: 5rem;
+        padding: 8rem 0 .5rem;
     }
 `

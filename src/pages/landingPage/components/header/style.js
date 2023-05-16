@@ -1,9 +1,13 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
+  padding: 55px 15rem;
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors['brand-blue']};
+
+  @media(max-width: 1366px) {
     padding: 55px 100px;
-    width: 100%;
-    background-color: ${({ theme }) => theme.colors['brand-blue']};
+  }
 
   @media (max-width: 768px) {
     padding: 30px;
