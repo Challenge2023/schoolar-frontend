@@ -1,6 +1,6 @@
-import DashboardIcon from '../../../../assets/dashboard-icon.svg'
-import ContentIcon from '../../../../assets/content-icon.svg'
-import testIcon from '../../../../assets/test-icon.svg'
+import { ReactComponent as DashboardIcon } from '../../../../assets/dashboard-icon.svg'
+import { ReactComponent as ContentIcon } from '../../../../assets/content-icon.svg'
+import { ReactComponent as TestIcon } from '../../../../assets/test-icon.svg'
 import { useState } from 'react'
 import { NavItem } from '../navItem'
 import { NavMobileContainer } from '../../../../pages/landingPage/components/header/style'
@@ -13,22 +13,23 @@ import {
     SidebarHeader,
 } from './style'
 import Hamburger from 'hamburger-react'
+import { useLocation } from 'react-router-dom'
 
 const navData = [
     {
         title: 'Dashboard',
         path: '/home',
-        icon: DashboardIcon,
+        icon: <DashboardIcon />,
     },
     {
         title: 'Conteúdo',
         path: '/home/content',
-        icon: ContentIcon,
+        icon: <ContentIcon />,
     },
     {
         title: 'Provas',
         path: '/home/test',
-        icon: testIcon,
+        icon: <TestIcon />,
     },
 ]
 
@@ -40,6 +41,11 @@ const NavMobileLinks = [
 
 export function SideBar() {
     const [isOpen, setOpen] = useState(false)
+    const location = useLocation()
+
+    const isActiveRoute = (route) => {
+        return location.pathname === route
+    }
 
     return (
         <SidebarContainer>
@@ -68,6 +74,7 @@ export function SideBar() {
                                     title={item.title}
                                     path={item.path}
                                     icon={item.icon}
+                                    color={isActiveRoute(item.path) ? 'brand-blue' : 'base-text-lighter'}
                                 />
                             )
                         })}

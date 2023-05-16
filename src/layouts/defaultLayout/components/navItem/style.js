@@ -10,16 +10,22 @@ export const NavItemContainer = styled.li`
   > a {
     width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 30px;
     padding: 10px 50px;
     transition: all 0.3s;
+    align-items: center;
     color: ${({ theme }) => theme.colors['base-text-lighter']};
   } 
 
 `
 
 export const NavItemIcon = styled.div`
-  width: 50px;
   display: flex;
   justify-content: center;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    color: ${({ theme, color }) => theme.colors[`${color}`]};
+  }
 `
