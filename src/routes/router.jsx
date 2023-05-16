@@ -4,6 +4,7 @@ import { LandingPage } from "../pages/landingPage";
 import { Login } from "../pages/signIn";
 import { PrivateRoute } from "./privateRoute";
 import { DefaultLayout } from "../layouts/defaultLayout";
+import { Dashboard } from "../pages/dashboardPage";
 
 export function Router() {
     return (
@@ -16,7 +17,7 @@ export function Router() {
 
             <Route path="/home" element={<PrivateRoute />}>
                 <Route path="" element={<DefaultLayout />}>
-
+                    <Route path="" element={<Dashboard />} />
                 </Route>
             </Route>
 

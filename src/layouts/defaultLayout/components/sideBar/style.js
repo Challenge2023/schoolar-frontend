@@ -6,7 +6,6 @@ export const SidebarContainer = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.colors['base-background']};
   padding: 50px 15px;
-  height: 91vh;
   gap: 40px;
   margin: 2rem;
   border-radius: 15px;
@@ -21,7 +20,6 @@ export const SidebarContainer = styled.div`
     width: 100vw;
     margin: 0;
     border-radius: 0;
-    height: 100%;
   }
 `
 
@@ -43,6 +41,14 @@ export const SidebarHeader = styled.div`
       justify-content: space-between;
       width: 100%;
     }
+  }
+`
+
+export const SidebarUserInfo = styled.div`
+  padding-top: 1rem;
+
+  @media (max-width: 1000px) {
+    padding-top: 0;
   }
 `
 
@@ -83,7 +89,7 @@ export const DesktopNav = styled.nav`
   > ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 
     @media (max-width: 1000px) {
       display: flex;

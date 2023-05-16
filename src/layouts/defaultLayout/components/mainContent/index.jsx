@@ -1,5 +1,8 @@
-export function MainContent() {
+// eslint-disable-next-line react/prop-types
+export function MainContent({ children }) {
     return (
-        <p>oi</p>
+        <div>
+            {children}
+        </div>
     )
 }

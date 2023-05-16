@@ -33,3 +33,10 @@ export const RegularText = styled.p`
     font-size: ${({ theme }) => theme.textSizes["text-s"]};
   }
 `
+
+export const RegularTextCustom = styled.p`
+  color: ${({ theme, color }) => theme.colors[`${color}`]};
+  font-size: ${({ theme, fontSize }) => theme.textSizes[`${fontSize}`]};
+  line-height: 160%;
+  font-weight: ${({ weight }) => weight ?? 400};
+`

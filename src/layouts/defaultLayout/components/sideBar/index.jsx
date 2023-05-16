@@ -11,9 +11,11 @@ import {
     SidebarBody,
     SidebarContainer,
     SidebarHeader,
+    SidebarUserInfo,
 } from './style'
 import Hamburger from 'hamburger-react'
 import { useLocation } from 'react-router-dom'
+import { UserInfo } from '../../../../components/userInfo'
 
 const navData = [
     {
@@ -51,6 +53,11 @@ export function SideBar() {
         <SidebarContainer>
             <SidebarHeader>
                 <div>
+
+                    <SidebarUserInfo>
+                        <UserInfo />
+                    </SidebarUserInfo>
+
                     <MobileIcon className="menu-icon">
                         <Hamburger toggled={isOpen} toggle={setOpen} />
                     </MobileIcon>

@@ -10,7 +10,7 @@ export const NavItemContainer = styled.li`
   > a {
     width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 25px;
     padding: 10px 50px;
     transition: all 0.3s;
     align-items: center;
