@@ -9,7 +9,9 @@ import SchoolarBrand from '../../assets/schoolar-brand.svg'
 import { BackButton } from '../../components/backButton'
 import ArrowBack from '../../assets/arrow-back.svg'
 import { Navigate } from 'react-router-dom'
-import { useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from '../../contexts/AuthContext'
+import { PulseLoader } from "react-spinners";
 
 const formData = [
     {
@@ -35,18 +37,16 @@ export function Login() {
         resolver: yupResolver(SignInValidatorSchema),
     })
 
-    //LÓGICA APENAS PARA TESTE
-    const [user, setUser] = useState(null)
-    const [signed, setSigned] = useState(false)
+    const { signIn, signed, isLoading, user } = useContext(AuthContext)
 
     async function handleLogin(inputData) {
         console.log(inputData)
-        setSigned(true)
-        setUser(inputData)
+        await signIn(inputData)
     }
 
     if (signed) {
-        return <Navigate to="/home" />
+        if (user.type === 'STUDENT') return <Navigate to="/home" />
+        if (user.type === 'PROFESSOR') return <Navigate to="/home" />
     } else {
         return (
             <LoginContainer>
@@ -97,7 +97,11 @@ export function Login() {
                             textColor="base-white"
                             hoverBackgroundColor="base-button-hover"
                         >
-                            Login
+                            {isLoading ? (
+                                <PulseLoader color="#FFF" size={14} />
+                            ) : (
+                                'Login'
+                            )}
                         </ButtonForm>
                     </FormDataContainer>
 
