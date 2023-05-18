@@ -1,0 +1,25 @@
+.ant-typography {
+    color: #202020 !important;
+    font-size: 1.6rem !important;
+    font-weight: bold !important;
+    font-family: 'Poppins';
+}
+
+.anticon svg {
+    color: #A3A3A3 !important;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.ant-space-item {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.personalize-text {
+    padding-left: 30%;
+}
+
+:where(.css-dev-only-do-not-override-15rg2km).ant-space {
+    padding-left: 1rem !important;
+}

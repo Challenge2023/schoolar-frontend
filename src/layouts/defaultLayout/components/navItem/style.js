@@ -11,7 +11,6 @@ export const NavItemContainer = styled.li`
     width: 100%;
     display: flex;
     gap: 25px;
-    padding: 10px 50px;
     transition: all 0.3s;
     align-items: center;
     color: ${({ theme }) => theme.colors['base-text-lighter']};

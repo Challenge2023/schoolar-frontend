@@ -37,16 +37,19 @@ export function Login() {
         resolver: yupResolver(SignInValidatorSchema),
     })
 
-    const { user, signed, signIn, isLoading } = useContext(AuthContext)
+    const signed = true
+
+    // const { user, signed, signIn, isLoading } = useContext(AuthContext)
 
     async function handleLogin(inputData) {
         console.log(inputData)
-        await signIn(inputData)
+        // await signIn(inputData)
     }
 
     if (signed) {
-        if (user.type === 'STUDENT') return <Navigate to="/home" />
-        if (user.type === 'PROFESSOR') return <Navigate to="/home" />
+        return <Navigate to="/home" />
+        // if (user.type === 'STUDENT') return <Navigate to="/home" />
+        // if (user.type === 'PROFESSOR') return <Navigate to="/home" />
     } else {
         return (
             <LoginContainer>

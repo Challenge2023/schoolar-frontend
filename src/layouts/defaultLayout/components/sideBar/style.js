@@ -95,7 +95,7 @@ export const DesktopNav = styled.nav`
   > ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
 
     @media (max-width: 1000px) {
       display: flex;
