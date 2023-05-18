@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom"
 import { Router } from "./routes/router"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { AuthProvider } from "./contexts/authContext"
 
 AOS.init({
   // Global settings:
@@ -32,7 +33,9 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <BrowserRouter>
+      <AuthProvider>
         <Router />
+      </AuthProvider>
       </BrowserRouter>
     </ThemeProvider>
   )

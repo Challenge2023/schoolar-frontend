@@ -4,13 +4,13 @@ import { InputForm } from "../../components/input";
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { SignInValidatorSchema } from '../../utils/schema/loginSchema'
-import { ButtonForm } from '../../components/ButtonForm'
+import { ButtonForm } from '../../components/buttonForm/index'
 import SchoolarBrand from '../../assets/schoolar-brand.svg'
 import { BackButton } from '../../components/backButton'
 import ArrowBack from '../../assets/arrow-back.svg'
 import { Navigate } from 'react-router-dom'
 import { useContext } from "react";
-import { AuthContext } from '../../contexts/AuthContext'
+import { AuthContext } from '../../contexts/authContext'
 import { PulseLoader } from "react-spinners";
 
 const formData = [
@@ -37,7 +37,7 @@ export function Login() {
         resolver: yupResolver(SignInValidatorSchema),
     })
 
-    const { signIn, signed, isLoading, user } = useContext(AuthContext)
+    const { user, signed, signIn, isLoading } = useContext(AuthContext)
 
     async function handleLogin(inputData) {
         console.log(inputData)
