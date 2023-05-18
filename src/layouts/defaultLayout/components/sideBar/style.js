@@ -6,7 +6,7 @@ export const SidebarContainer = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.colors['base-background']};
   padding: 50px 15px;
-  gap: 40px;
+  gap: 10%;
   margin: 2rem;
   border-radius: 15px;
 
@@ -70,12 +70,18 @@ export const MobileIcon = styled.div`
 
 export const SidebarBody = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 20%;
   height: 70%;
 
   @media (max-width: 1000px) {
     display: none;
   }
+`
+
+export const SidebarFilter = styled.div`
+
 `
 
 export const DesktopNav = styled.nav`

@@ -10,12 +10,14 @@ import {
     MobileIcon,
     SidebarBody,
     SidebarContainer,
+    SidebarFilter,
     SidebarHeader,
     SidebarUserInfo,
 } from './style'
 import Hamburger from 'hamburger-react'
 import { useLocation } from 'react-router-dom'
 import { UserInfo } from '../../../../components/userInfo'
+import { UserFilter } from './components/userFilter'
 
 const navData = [
     {
@@ -72,6 +74,10 @@ export function SideBar() {
                 )}
             </SidebarHeader>
             <SidebarBody>
+                <SidebarFilter>
+                    <UserFilter />
+                </SidebarFilter>
+
                 <DesktopNav>
                     <ul>
                         {navData.map((item, index) => {

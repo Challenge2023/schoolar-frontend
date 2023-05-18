@@ -13,8 +13,8 @@ export const UserInfoContainer = styled.div`
 `
 
 export const UserImageContainer = styled.div`
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-color: ${({ theme }) => theme.colors['brand-blue']};
     border-radius: 15px;
 
